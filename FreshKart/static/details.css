@@ -1,0 +1,17 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.wrapper{
+    padding: 2rem 7rem;
+}
+
+.home{
+    margin-bottom: 30px;
+}
+
+.details{
+    display: flex;
+    gap: 20px;
+}

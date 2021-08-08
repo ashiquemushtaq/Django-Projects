@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.cart{
+    padding: 2rem 7rem;
+}
+
+h4{
+    margin: 20px 0 10px 0;
+}
+
+table{
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ddf;
+}
+
+th,td{
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid #ddf;
+    background-color: #ddd;
+}
+
+td{
+    background-color: white;
+}
+
+.cout{
+    float: right;
+    margin-top: 20px;
+}
+
+table button{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 500;
+}
+
+#quant{
+    border: 1px solid #ddf;
+    outline: none;
+    text-align: center;
+    width: 50px;
+    margin: 0 5px 0 5px;
+}
