@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-12">
+        {% for i in feat %}
+        <div class="card featured">
+            <div class="card-body col-md-6">
+                <h1>{{i.name}}</h1>
+                <p>{{i.desc|truncatewords:20}}</p>
+                <a href="{% url 'details' i.id %}">Continue reading...</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-8">
+        {% for i in items %}
+        <div class="card" style="margin-bottom: 10px">
+            <div class="card-body">
+                <h2>{{i.name}}</h2>
+                <p>{{i.desc|truncatewords:20}}</p>
+                <a href="{% url 'details' i.id %}">Continue reading...</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="col-md-4">
+        <div class="card about">
+            <div class="card-body">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sit amet sapien sed ex fermentum dapibus.</p>
+            </div>
+        </div>
+        </div>
+</div>
+{% endblock %}

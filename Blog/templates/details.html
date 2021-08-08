@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h3>{{blog.name}}</h3>
+<p>{{blog.desc}}</p>
+{% if user.is_authenticated %}
+<a href="{% url 'edit' blog.id %}" class="btn btn-outline-success">Edit</a>
+<a href="{% url 'delete' blog.id %}" class="btn btn-outline-danger">Delete</a>
+{% endif %}
+{% endblock %}
