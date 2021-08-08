@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+        <div class="row aboutus">
+            <div class="col-md-12">
+                <h2>About xYz Hospital</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra nisi a lorem viverra, eu lacinia nulla consectetur. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed commodo ornare elit, convallis interdum nibh varius sed. Nunc sagittis consequat nisi, vel pretium enim sollicitudin non. Ut malesuada iaculis est, non scelerisque leo rutrum nec. Praesent quam quam, elementum vel consectetur ac, eleifend nec metus. In at congue mauris.</p>
+                <a href="{% url 'about' %}" class="redbtn">About Us</a>
+            </div>
+        </div>
+        <div class="row specialities">
+            <div class="col-md-6">
+                <h2>Our Specialities</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer viverra nisi a lorem viverra, eu lacinia nulla consectetur. Sed commodo ornare elit, convallis interdum nibh varius sed.</p>
+                <a href="#" class="redbtn">View All</a>
+            </div>
+            <div class="col-md-6">
+                <img src="../static/specialities.png" alt="">
+            </div>
+        </div>
+        <div class="row doctors">
+            <h2>Our Doctors</h2>
+            {% for i in doctor %}
+            <div class="col-sm-3">
+                <div class="card">
+                    <img src="{{i.img.url}}" alt="" class="card-img-top" width="80px" height="210px">
+                    <hr style="border: 1px solid red;">
+                    <div class="card-body">
+                        <h5>{{i.name}}</h5>
+                        <p>{{i.dep.name}}</p>
+                        <p>xyz Hospital</p>
+                        <a href="#" class="btn btn-outline-danger">Book Appointment</a>
+                    </div>    
+                </div>
+                <!-- <a href="#" class="redbtn">View All</a> -->
+            </div>
+            {% endfor %}
+            <a href="{% url 'doctors' %}" class="redbtn vdoc">View All</a>
+        </div>
+{% endblock %}

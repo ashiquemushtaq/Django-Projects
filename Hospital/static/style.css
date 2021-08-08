@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: #737476;
+}
+
+header{
+    padding: 2rem 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h2,h5{
+    color: black;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+nav a{
+    text-decoration: none;
+    font-weight: 500;
+    color: #737476;
+}
+
+nav a:hover{
+    color: #c71d22;
+}
+
+.aboutus{
+    padding: 2.5rem 7rem;
+}
+
+.redbtn{
+    border: 1px solid #c71d22;
+    background-color: #c71d22;
+    border-radius: 30px;
+    color: #fff;
+    padding: 10px 20px;
+    width: 160px;
+    box-shadow: none;
+    outline: 0;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.redbtn:hover{
+    color:white;
+}
+
+.specialities{
+    padding: 2.5rem 7rem;
+    display: flex;
+    align-items: center;
+}
+
+.doctors{
+    padding: 2.5rem 7rem;
+    text-align: center;
+}
+
+.card{
+    border: 1px solid #c71d22;
+    margin-bottom: 15px;
+}
+
+.card-body{
+    text-align: center;
+    padding: 0 20px 20px 20px;
+}
+
+.card-body a{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.vdoc{
+    margin:0 auto;
+    display:block;
+}
+
+.btn-danger{
+    background-color: #c71d22;
+}
+
+.btn-danger:hover{
+    background-color: white;
+    color: #c71d22;
+}
+
+.btn-outline-danger:hover{
+    background-color: #c71d22;
+    color: white;
+}
+
+.form-block{
+    padding: 2.5rem 7rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.nodoc{
+    margin-top: 15px;
+    margin-bottom: 50vh;
+}
+
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+footer{
+    padding: 2.5rem 7rem;
+    background-color: #c71d22;
+    color: #fff;
+}
+
+input,select{
+    width: 250px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    border: 1px solid #737476;
+    outline: none;
+}
+

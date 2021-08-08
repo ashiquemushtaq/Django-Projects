@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="form-block">
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="text" name="name" placeholder="Patient Name"><br><br>
+    <input type="text" name="mobile" placeholder="Mobile / Phone"><br><br>
+    <input type="email" name="mail" placeholder="Email Address"><br><br>
+    <select name="department">
+        <option value="0" style="color: #737476;">Select Department</option>
+        {% for i in depart %}
+        <option value="{{i.name}}">{{i.name}}</option>
+        {% endfor %}
+    </select><br><br>
+    <select name="doctor">
+        <option value="0" style="color: #737476;">Select Doctor</option>
+        {% for i in doctor %}
+        <option value="{{i.name}}">{{i.name}}</option>
+        {% endfor %}
+    </select><br><br>
+    <div class="ap-bt">
+        <button type="submit" class="btn btn-danger">Submit</button>
+        <button type="reset" class="btn btn-outline-danger">Clear</button>
+    </div>
+</form>
+</div>
+{% endblock %}

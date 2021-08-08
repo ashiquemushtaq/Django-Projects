@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>{{depart.name}}</h3>
+<div class="row doctors">
+            <h3>Our Department Doctors</h3>
+            {% for i in messages %}
+            <h4 class="nodoc">No Doctors available</h4>
+            {% endfor %}
+            {% for i in doctor %}
+            <div class="col-sm-3">
+                <div class="card">
+                    <img src="{{i.img.url}}" alt="" class="card-img-top" width="80px" height="210px">
+                    <hr style="border: 1px solid red;">
+                    <div class="card-body">
+                        <h5>{{i.name}}</h5>
+                        <p>{{i.dep.name}}</p>
+                        <p>xyz Hospital</p>
+                        <a href="#" class="btn btn-outline-danger">Book Appointment</a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+</div>
+{% endblock %}
